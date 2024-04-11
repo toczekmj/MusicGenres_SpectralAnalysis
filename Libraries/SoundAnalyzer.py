@@ -1,11 +1,13 @@
+import math
 import os.path
 import numpy as np
 import scipy as sp
 import soundfile
 from matplotlib import pyplot as plt
+from sklearn import preprocessing
 
 
-def np_plot_magnitude_spectrum(signal, title, sample_rate, frequency_ratio=1):
+def plot_magnitude_spectrum(signal, title, sample_rate, frequency_ratio=1):
     ft = sp.fft.rfft(signal)
 
     magnitude_spectrum = np.abs(ft)
@@ -14,38 +16,21 @@ def np_plot_magnitude_spectrum(signal, title, sample_rate, frequency_ratio=1):
     # plot magnitude spectrum
     fig = plt.figure(figsize=(18, 5))
 
-    frequency = np.linspace(0, sample_rate, len(magnitude_spectrum))
+    frequency = np.linspace(20, sample_rate, len(magnitude_spectrum)-20)#len(magnitude_spectrum))
     num_frequency_beans = int(len(frequency) * frequency_ratio)
 
     fig.canvas.manager.set_window_title(title)
 
-    plt.plot(frequency[:num_frequency_beans], magnitude_spectrum[:num_frequency_beans])
+    # normalise magnitude
+    normalised_magnitude = preprocessing.normalize([magnitude_spectrum])[0]
+
+    # plt.plot(frequency[:num_frequency_beans], magnitude_spectrum[:num_frequency_beans] * (2 / num_frequency_beans))
+    plt.plot(frequency[:num_frequency_beans], normalised_magnitude[:num_frequency_beans])
     plt.xlabel("Frequency (Hz)")
     plt.title(title)
     plt.show()
     return fig
 
-
-def plot_magnitude_spectrum(signal, title, sample_rate, frequency_ratio=1):
-    ft = np.fft.rfft(signal)
-    magnitude_spectrum = np.abs(ft)
-    title = os.path.split(title)[-1]
-
-    # plot magnitude spectrum
-    plt.figure(figsize=(18, 5))
-
-    frequency = np.linspace(0, sample_rate, len(magnitude_spectrum))
-    num_frequency_beans = int(len(frequency) * frequency_ratio)
-
-    fig = plt.get_current_fig_manager()
-    fig.canvas.manager.set_window_title(title)
-
-    plt.plot(frequency[:num_frequency_beans], magnitude_spectrum[:num_frequency_beans])
-    # plt.yscale("log")
-    plt.xlabel("Frequency (Hz)")
-    plt.title(title)
-
-    plt.show()
 
 
 def readData(filePath):
