@@ -1,21 +1,12 @@
-import glob
+from Libraries import FftPreparation as fp
 from Libraries import SoundAnalyzer as sa
 
-genres = [
-    "pop",
-    "rock",
-    "classical",
-    "dance",
-    "jazz",
-    "country"
-]
+CHUNK = 500
 
 if __name__ == '__main__':
-    dir_path = f"/Users/toczekmj/PycharmProjects/spectralAnalysis/{genres[0]}/*"
-    files = glob.glob(dir_path)
-    charts = []
+    path = '/Users/toczekmj/PycharmProjects/spectralAnalysis/pop/One More Night.mp3'
 
-    for file in files:
-        signal, rate = sa.load_song(file)
-        mg, freq, beans = sa.calculate_magnitude_spectrum(signal, rate, 200)
-        sa.plot_frequency_graph(mg, freq, beans, 200)
+    signal, sample_rate = sa.load_song(path)
+    x_mean, y_mean, beans = fp.prepare_matrix(signal, sample_rate, CHUNK=CHUNK, offset_hz=0)
+    sa.plot_frequency_graph(y_mean, x_mean, beans=beans, offset_hz=0)
+
