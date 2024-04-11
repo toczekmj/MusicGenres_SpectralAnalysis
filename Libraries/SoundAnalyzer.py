@@ -1,11 +1,12 @@
 import librosa
+import numpy
 import numpy as np
 import scipy as sp
 from matplotlib import pyplot as plt
 from sklearn import preprocessing
 
 
-def calculate_magnitude_spectrum(signal, sample_rate=22050, offset_hz=20):
+def calculate_magnitude_spectrum(signal: list, sample_rate: int = 22050):
     # perform transformation using Fast Fourier Transform
     # for purely real input DFT output is 'mirrored'
     # therefore we can use rfft instead of fft to cut out
@@ -16,66 +17,42 @@ def calculate_magnitude_spectrum(signal, sample_rate=22050, offset_hz=20):
     magnitude_spectrum = np.abs(fourier_transform)
 
     # normalise magnitude
-    normalised_magnitude_spectrum = preprocessing.normalize([magnitude_spectrum])[0]
+    normalised_magnitude_spectrum = preprocessing.normalize([magnitude_spectrum], norm='max')[0]
 
     # create frequency linspace ( offset_hz < frequency < len(mag_spec)-offset_hz
     # to prevent artifacts
     frequency = np.linspace(
-        offset_hz,
-        # 16000,
+        0,
         sample_rate,
         len(magnitude_spectrum)
     )
 
-    # calculate amount of beans
-    beans_amount = len(frequency) - offset_hz
-
-    return normalised_magnitude_spectrum, frequency, beans_amount
+    return normalised_magnitude_spectrum, frequency
 
 
-def plot_frequency_graph(magnitude_spectrum, frequency, beans_amount, offset_hz=20, size_x=18, size_y=5):
+def plot_frequency_graph(magnitude_spectrum: list, frequency: list, beans: int,
+                         size_x: int = 18, size_y: int = 5, offset_hz: int = 50):
     plt.figure(
         figsize=(size_x, size_y)
     )
 
-    plt.plot(
-        frequency[offset_hz:beans_amount],
-        magnitude_spectrum[offset_hz:beans_amount]
+    x_axis = frequency[int(offset_hz/2):int(beans-offset_hz/2)]
+    y_axis = magnitude_spectrum[int(offset_hz/2):int(beans-offset_hz/2)]
+
+    plt.semilogy(
+        x_axis,
+        y_axis
     )
 
     plt.xlabel("Frequency (Hz)")
-    plt.ylabel("Normalised average value of ĝ(x)")
+    plt.ylabel("Magnitude ĝ(x)")
     plt.title("Average frequency of music")
     plt.show()
 
 
-def load_song(path, sample_rate=22050):
+def load_song(path: str, sample_rate: int = 22050):
     # librosa uses 22050 resampling by default
     # which is good for our further computation steps
     # resulting in lower memory consumption and faster operations
     music, sample_rate = librosa.load(path, sr=sample_rate)
     return music, sample_rate
-
-
-def print_analyze_sample(filePath):
-    audio_samples, sample_rate = load_song(filePath)
-    print("sample rate", sample_rate)
-    number_samples = len(audio_samples)
-
-    # audio samples matrix
-    print(f'Audio samples {audio_samples}')
-
-    # number of samples
-    print(f'Number of samples {number_samples}')
-
-    # sample rate
-    print(f'Sample rate {sample_rate}')
-
-    # duration
-    duration = round(number_samples / sample_rate, 2)
-    print(f'Audio duration: {duration}')
-
-
-
-
-
