@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="add coments in code, add function to calculate FFT, and add fnuction to plot calculated graph">
-      <change afterPath="$PROJECT_DIR$/Libraries/FftPreparation.py" afterDir="false" />
+    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/FftPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FftPreparation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Libraries/SoundAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/SoundAnalyzer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -30,12 +30,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "toczekmj"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;toczekmj&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -56,16 +56,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.SoundAnalyzer.executor": "Run",
-    "Python.main.executor": "Debug",
-    "Python.simpleanalyzer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "array-splitter"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.SoundAnalyzer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simpleanalyzer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;array-splitter&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Libraries" />
@@ -159,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712842838065</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog.">
+      <option name="closed" value="true" />
+      <created>1712862854657</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712862854657</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,20 +177,21 @@
     <MESSAGE value="fourier fast transform visualisation" />
     <MESSAGE value="normalize amplitudes, add gitignore" />
     <MESSAGE value="add coments in code, add function to calculate FFT, and add fnuction to plot calculated graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="add coments in code, add function to calculate FFT, and add fnuction to plot calculated graph" />
+    <MESSAGE value="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog." />
+    <option name="LAST_COMMIT_MESSAGE" value="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Libraries/FftPreparation.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/Libraries/SoundAnalyzer.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
