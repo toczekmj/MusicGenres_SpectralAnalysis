@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog.">
+    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="add graph semilog">
+      <change afterPath="$PROJECT_DIR$/Libraries/GraphPloter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FftPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FftPreparation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Libraries/SoundAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/SoundAnalyzer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -25,18 +25,22 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="array-splitter" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;toczekmj&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="toczekmj" />
+        <option name="repository" value="MusicGenres_SpectralAnalysis" />
+      </RepoCoordinatesHolder>
+    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="a7921d93-15cf-4220-9c4a-f9db37eb6861" />
@@ -56,16 +60,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.SoundAnalyzer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.simpleanalyzer.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;array-splitter&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.SoundAnalyzer.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.simpleanalyzer.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "CSV"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Libraries" />
@@ -167,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712862854657</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add graph semilog">
+      <option name="closed" value="true" />
+      <created>1713860204996</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713860204996</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -178,19 +190,15 @@
     <MESSAGE value="normalize amplitudes, add gitignore" />
     <MESSAGE value="add coments in code, add function to calculate FFT, and add fnuction to plot calculated graph" />
     <MESSAGE value="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog." />
-    <option name="LAST_COMMIT_MESSAGE" value="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog." />
+    <MESSAGE value="add graph semilog" />
+    <option name="LAST_COMMIT_MESSAGE" value="add graph semilog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Libraries/SoundAnalyzer.py</url>
-          <line>13</line>
+          <line>11</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
