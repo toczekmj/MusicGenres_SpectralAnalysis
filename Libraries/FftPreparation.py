@@ -47,6 +47,7 @@ def calculate_matrix(signal: list, sample_rate: int, CHUNK: int = 100, offset_hz
 
     return x, y, len(x)
 
+
 def matrix_average(signal: list, sample_rate: int, CHUNK: int = 100, offset_hz: int = 20):
 
     if offset_hz >= CHUNK/4:

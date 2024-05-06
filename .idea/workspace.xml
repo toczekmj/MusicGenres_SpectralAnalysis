@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="add graph semilog">
-      <change afterPath="$PROJECT_DIR$/Libraries/GraphPloter.py" afterDir="false" />
+    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="separate plotting graphs from SoundAnalyzer.py">
+      <change afterPath="$PROJECT_DIR$/Libraries/CvsExport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/SoundAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/SoundAnalyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/FftPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FftPreparation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,17 +23,36 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="array-splitter" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="recentNewPullRequestHead">
       <RepoCoordinatesHolder>
@@ -63,11 +82,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.SoundAnalyzer.executor": "Run",
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Debug",
     "Python.simpleanalyzer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "CSV"
+    "git-widget-placeholder": "CSV",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -90,7 +110,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="-g &quot;pizda&quot; -u &quot;https://www.youtube.com/watch?v=IgDCPDpgiSo&quot;" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -179,8 +199,19 @@
       <option name="project" value="LOCAL" />
       <updated>1713860204996</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="separate plotting graphs from SoundAnalyzer.py">
+      <option name="closed" value="true" />
+      <created>1713861047281</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713861047281</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
@@ -191,15 +222,21 @@
     <MESSAGE value="add coments in code, add function to calculate FFT, and add fnuction to plot calculated graph" />
     <MESSAGE value="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog." />
     <MESSAGE value="add graph semilog" />
-    <option name="LAST_COMMIT_MESSAGE" value="add graph semilog" />
+    <MESSAGE value="separate plotting graphs from SoundAnalyzer.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="separate plotting graphs from SoundAnalyzer.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Libraries/SoundAnalyzer.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/Libraries/CvsExport.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
