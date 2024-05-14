@@ -1,13 +1,10 @@
 import os.path
 import shutil
-
 import numpy as np
-
 from Libraries.FftPreparation import matrix_average
 from Libraries.SoundAnalyzer import load_song
 from Libraries.PlaylistDownloder import downloadPlaylist, downloadMp3
 from Libraries.CvsExport import export_data_to_csv as export_csv
-from Libraries.GraphPloter import plot_frequency_graph_semilog
 import sys, getopt
 from glob import glob
 
@@ -73,8 +70,6 @@ def calculate(genre_name: str):
         print(song)
         x, y, b = get_song_frequency(current_path)
         export_csv(x, y, genre_name, csv_path, False)
-
-
 
 
 if __name__ == '__main__':
