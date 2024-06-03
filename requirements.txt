@@ -1,0 +1,11 @@
+joblib==1.4.2
+librosa==0.10.2.post1
+matplotlib==3.9.0
+numpy==1.26.4
+pandas==2.2.2
+pydub==0.25.1
+pytube==15.0.0
+scikit_learn==1.4.2
+scipy==1.13.1
+tensorflow==2.16.1
+tensorflow_intel==2.16.1
