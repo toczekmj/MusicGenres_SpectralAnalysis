@@ -35,7 +35,7 @@ def downloadMp3(url, music_dir, append=True):
 
 def downloadPlaylist(url, music_dir, append=True):
     playlist = Playlist(url)
-
+    a = input()
     if os.path.isdir(music_dir) and not append:
         shutil.rmtree(music_dir)
 
