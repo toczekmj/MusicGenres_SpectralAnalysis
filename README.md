@@ -18,16 +18,16 @@
 
 ##  Quick Links
 
-> - [ Overview](#-overview)
-> - [ Features](#-features)
-> - [ Repository Structure](#-repository-structure)
-> - [ Modules](#-modules)
-> - [ Getting Started](#-getting-started)
->   - [ Installation](#-installation)
->   - [ Running MusicGenres_SpectralAnalysis](#-running-MusicGenres_SpectralAnalysis)
-> - [ Contributing](#-contributing)
-> - [ License](#-license)
-> - [ Acknowledgments](#-acknowledgments)
+> - [ Overview](#overview)
+> - [ Features](#features)
+> - [ Repository Structure](#repository-structure)
+> - [ Modules](#modules)
+> - [ Getting Started](#getting-started)
+>   - [ Installation](#installation)
+>   - [ Running MusicGenres_SpectralAnalysis](#running-SpectralAnalysis)
+> - [ Contributing](#contributing)
+> - [ License](#license)
+> - [ Acknowledgments](#acknowledgments)
 
 ---
 
