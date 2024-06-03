@@ -35,7 +35,7 @@ def downloadMp3(url, music_dir, append=True):
 
 def downloadPlaylist(url, music_dir, append=True):
     playlist = Playlist(url)
-
+    a = input()
     if os.path.isdir(music_dir) and not append:
         shutil.rmtree(music_dir)
 
@@ -46,18 +46,23 @@ def downloadPlaylist(url, music_dir, append=True):
     names = []
 
     for video in playlist.videos:
-        stream = video.streams.filter(only_audio=True).first()
-        name = f'{i}.mp4'
-        i += 1
-
-        while os.path.isfile(os.path.join(music_dir, name)):
-            i += 1
+        try:
+            stream = video.streams.filter(only_audio=True).first()
             name = f'{i}.mp4'
+            i += 1
 
-        print(f'Downloading {name}')
-        stream.download(output_path=music_dir, filename=name)
-        names.append(
-            os.path.join(music_dir, name.replace('.mp4', '.mp3'))
-        )
-        convertStreamToMp3(os.path.join(music_dir, name))
+            while os.path.isfile(os.path.join(music_dir, name)):
+                i += 1
+                name = f'{i}.mp4'
+
+            print(f'Downloading {name}')
+            stream.download(output_path=music_dir, filename=name)
+            names.append(
+                os.path.join(music_dir, name.replace('.mp4', '.mp3'))
+            )
+            convertStreamToMp3(os.path.join(music_dir, name))
+        except:
+            print(f'An error occurred. Skipping {name}')
+            continue
+
     return names

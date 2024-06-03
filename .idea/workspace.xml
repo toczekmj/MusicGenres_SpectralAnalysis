@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="add graph semilog">
-      <change afterPath="$PROJECT_DIR$/Libraries/GraphPloter.py" afterDir="false" />
+    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="niepewny update">
+      <change afterPath="$PROJECT_DIR$/Sample Model/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample Model/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/MergeCSV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/genresaverage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/readfileforplayback.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spectralAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spectralAnalysis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/SoundAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/SoundAnalyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/CvsExport.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/CvsExport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/FftPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FftPreparation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/PlaylistDownloder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/PlaylistDownloder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,17 +32,36 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="array-splitter" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="recentNewPullRequestHead">
       <RepoCoordinatesHolder>
@@ -60,22 +88,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.SoundAnalyzer.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.simpleanalyzer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "CSV"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.MergeCSV.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SoundAnalyzer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.genresaverage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.predict.executor&quot;: &quot;Run&quot;,
+    &quot;Python.readfileforplayback.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.simpleanalyzer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;CSV&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mj\PycharmProjects\MusicGenres_SpectralAnalysis\Sample Model" />
+      <recent name="C:\Users\mj\PycharmProjects\MusicGenres_SpectralAnalysis\data\model" />
+      <recent name="C:\Users\mj\PycharmProjects\MusicGenres_SpectralAnalysis\misc" />
       <recent name="$PROJECT_DIR$/Libraries" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.genresaverage">
+    <configuration name="genresaverage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spectralAnalysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/genresaverage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="spectralAnalysis" />
       <option name="ENV_FILES" value="" />
@@ -89,7 +154,31 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="-g &quot;necrodancer_synthwave&quot; -a" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="readfileforplayback" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spectralAnalysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/readfileforplayback.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,11 +187,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.genresaverage" />
+        <item itemvalue="Python.readfileforplayback" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
@@ -114,6 +210,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712651767644</updated>
+      <workItem from="1715707440061" duration="12975000" />
+      <workItem from="1715766660111" duration="3909000" />
+      <workItem from="1715771212495" duration="5000" />
+      <workItem from="1715771228933" duration="2097000" />
+      <workItem from="1715773615066" duration="10827000" />
+      <workItem from="1715880992690" duration="1930000" />
+      <workItem from="1716486660487" duration="3240000" />
+      <workItem from="1716550919376" duration="1138000" />
+      <workItem from="1716743371460" duration="16104000" />
+      <workItem from="1716820004516" duration="3550000" />
+      <workItem from="1717431533850" duration="1175000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <option name="closed" value="true" />
@@ -179,8 +286,30 @@
       <option name="project" value="LOCAL" />
       <updated>1713860204996</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="separate plotting graphs from SoundAnalyzer.py">
+      <option name="closed" value="true" />
+      <created>1713861047281</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713861047281</updated>
+    </task>
+    <task id="LOCAL-00010" summary="niepewny update">
+      <option name="closed" value="true" />
+      <created>1715029212665</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715029212665</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
@@ -191,17 +320,47 @@
     <MESSAGE value="add coments in code, add function to calculate FFT, and add fnuction to plot calculated graph" />
     <MESSAGE value="rebuilt logic &#10;&#10;now input signal is being split into chunks, magnitude of every and each chunk is calculated, and matrix of frequency is being made. After geting a mean of every column, we can start plotting in semilog." />
     <MESSAGE value="add graph semilog" />
-    <option name="LAST_COMMIT_MESSAGE" value="add graph semilog" />
+    <MESSAGE value="separate plotting graphs from SoundAnalyzer.py" />
+    <MESSAGE value="niepewny update" />
+    <option name="LAST_COMMIT_MESSAGE" value="niepewny update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Libraries/SoundAnalyzer.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/Libraries/CvsExport.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/MergeCSV.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/readfileforplayback.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/genresaverage.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MusicGenres_SpectralAnalysis$genresaverage.coverage" NAME="genresaverage Coverage Results" MODIFIED="1716759677613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/MusicGenres_SpectralAnalysis$model.coverage" NAME="model Coverage Results" MODIFIED="1715786608193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/MusicGenres_SpectralAnalysis$main.coverage" NAME="main Coverage Results" MODIFIED="1716759602736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MusicGenres_SpectralAnalysis$predict.coverage" NAME="predict Coverage Results" MODIFIED="1715801260286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/MusicGenres_SpectralAnalysis$MergeCSV.coverage" NAME="MergeCSV Coverage Results" MODIFIED="1715766903505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MusicGenres_SpectralAnalysis$readfileforplayback.coverage" NAME="readfileforplayback Coverage Results" MODIFIED="1716752241299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
   </component>
 </project>

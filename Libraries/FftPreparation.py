@@ -18,35 +18,6 @@ def matrixize(arr: list):
     return arr
 
 
-def calculate_matrix(signal: list, sample_rate: int, CHUNK: int = 100, offset_hz: int = 20):
-    if offset_hz >= CHUNK/4:
-        raise Exception("You can't offset the plot by more beans, than there are beans in total")
-
-    # Signal is split into chunks of size CHUNK ,
-    # and therefore we have to check whether we have some odd last row.
-    # If so, we delete that odd part of out matrix, because with large amount of data
-    # it won't make any difference
-    arr = list(array_splitter(signal, CHUNK))
-    arr = matrixize(arr)
-
-    x = []
-    y = []
-
-    # Calculate spectrum for every chunk
-    for sg in arr:
-        magnitude, frequency = sa.calculate_magnitude_spectrum(sg, sample_rate)
-        x.append(frequency)
-        y.append(magnitude)
-
-    # Convert arrays to matrices, and get mean of every column
-    x_matrix = np.matrix(x)
-    y_matrix = np.matrix(y)
-
-    # beans = len(x_matrix)
-    # return np.squeeze(x_matrix), np.squeeze(y_matrix), beans
-
-    return x, y, len(x)
-
 def matrix_average(signal: list, sample_rate: int, CHUNK: int = 100, offset_hz: int = 20):
 
     if offset_hz >= CHUNK/4:
@@ -76,3 +47,4 @@ def matrix_average(signal: list, sample_rate: int, CHUNK: int = 100, offset_hz: 
     y_mean = np.squeeze(np.asarray(y_matrix.mean(0)))
     beans = len(x_mean)
     return x_mean, y_mean, beans
+
