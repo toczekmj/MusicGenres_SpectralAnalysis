@@ -8,7 +8,7 @@
     <em><code>► University project</code></em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/badge/license-GNU AGPLv3.0-blue" alt="license">
+	<img src="https://img.shields.io/badge/license-GNU AGPLv3.0-green" alt="license">
 	<img src="https://img.shields.io/github/last-commit/toczekmj/MusicGenres_SpectralAnalysis?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/toczekmj/MusicGenres_SpectralAnalysis?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/toczekmj/MusicGenres_SpectralAnalysis?style=flat&color=0080ff" alt="repo-language-count">
