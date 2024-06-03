@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="niepewny update">
-      <change afterPath="$PROJECT_DIR$/Sample Model/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample Model/predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/MergeCSV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/genresaverage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/readfileforplayback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spectralAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spectralAnalysis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/CvsExport.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/CvsExport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FftPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FftPreparation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/PlaylistDownloder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/PlaylistDownloder.py" afterDir="false" />
+    <list default="true" id="53873f50-2d72-435f-b0fd-c8217f211d84" name="Changes" comment="update readme">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,20 +50,12 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="recentNewPullRequestHead">
-      <RepoCoordinatesHolder>
-        <option name="owner" value="toczekmj" />
-        <option name="repository" value="MusicGenres_SpectralAnalysis" />
-      </RepoCoordinatesHolder>
-    </option>
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="a7921d93-15cf-4220-9c4a-f9db37eb6861" />
-        <option name="url" value="https://github.com/toczekmj/MusicGenres_SpectralAnalysis.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/toczekmj/MusicGenres_SpectralAnalysis.git",
+    "accountId": "85571cdc-2abc-4647-a281-412c685772ca"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -88,27 +68,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.MergeCSV.executor&quot;: &quot;Run&quot;,
-    &quot;Python.SoundAnalyzer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.genresaverage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.model.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.predict.executor&quot;: &quot;Run&quot;,
-    &quot;Python.readfileforplayback.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.simpleanalyzer.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;CSV&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.MergeCSV.executor": "Run",
+    "Python.SoundAnalyzer.executor": "Run",
+    "Python.genresaverage.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.model.executor": "Debug",
+    "Python.predict.executor": "Run",
+    "Python.readfileforplayback.executor": "Debug",
+    "Python.simpleanalyzer.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mj\PycharmProjects\MusicGenres_SpectralAnalysis\Sample Model" />
@@ -302,7 +282,39 @@
       <option name="project" value="LOCAL" />
       <updated>1715029212665</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update readme and add requirements.txt">
+      <option name="closed" value="true" />
+      <created>1717435703329</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717435703329</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1717435971580</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717435971580</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1717436022854</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717436022854</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1717436087228</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717436087228</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +334,9 @@
     <MESSAGE value="add graph semilog" />
     <MESSAGE value="separate plotting graphs from SoundAnalyzer.py" />
     <MESSAGE value="niepewny update" />
-    <option name="LAST_COMMIT_MESSAGE" value="niepewny update" />
+    <MESSAGE value="update readme and add requirements.txt" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -338,11 +352,6 @@
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/misc/readfileforplayback.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>17</line>
           <option name="timeStamp" value="54" />
@@ -351,6 +360,10 @@
           <url>file://$PROJECT_DIR$/misc/genresaverage.py</url>
           <line>51</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

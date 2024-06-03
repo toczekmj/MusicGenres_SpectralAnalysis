@@ -109,10 +109,10 @@ They are designed to get some particular data, from already processed files, for
 
 <details closed><summary>Sample Model</summary>
 
-| File                                                                                                      | Summary                                                                                                    |
-| ---                                                                                                        |------------------------------------------------------------------------------------------------------------|
-| [model.py](https://github.com/toczekmj/MusicGenres_SpectralAnalysis/blob/master/SampleModel/model.py)     | <code>► WARNING - FULLY AI GENERATED CONTENT<br/>Creates model which can recognise music genres.</code>    |
-| [predict.py](https://github.com/toczekmj/MusicGenres_SpectralAnalysis/blob/master/SampleModel/predict.py) | <code>► WARNING - FULLY AI GENERATED CONTENT<br/>Uses previously created model to recognise genres.</code> |
+| File                                                                                                      | Summary                                                                                                     |
+| ---                                                                                                        |-------------------------------------------------------------------------------------------------------------|
+| [model.py](https://github.com/toczekmj/MusicGenres_SpectralAnalysis/blob/master/SampleModel/model.py)     | <code>► WARNING - FULLY AI GENERATED CONTENT<br/> Creates model which can recognise music genres.</code>    |
+| [predict.py](https://github.com/toczekmj/MusicGenres_SpectralAnalysis/blob/master/SampleModel/predict.py) | <code>► WARNING - FULLY AI GENERATED CONTENT<br/> Uses previously created model to recognise genres.</code> |
 
 </details>
 
