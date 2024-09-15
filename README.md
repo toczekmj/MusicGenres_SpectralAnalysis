@@ -16,6 +16,12 @@
 
 <hr>
 
+## Credits 
+Please note that Music.ipynb and MuscGenresShaderPlot are NOT created by me. 
+All the credits belongs to their authors:
+- MusicGenresShaderPlot created by [Adam Migdalski](https://www.facebook.com/metix558)
+- Music.ipynb created by [Dawid Pałka](https://www.linkedin.com/in/dawid-pa%C5%82ka-1525b0270/)
+
 ##  Quick Links
 
 > - [ Overview](#overview)
@@ -208,13 +214,15 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ##  License
 
-This project is protected under the [GNU AGPLv3.0](https://choosealicense.com/licenses/agpl-3.0/#) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+This project is protected under the [GNU AGPLv3.0](https://choosealicense.com/licenses/agpl-3.0/#) License. 
+For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
 
----
+Please keep in mind, that this repo consists 3 different projects. 
+- Music.ipynb
+- MusicGenresSharedPlot
+- SpectralAnalysis
 
-##  Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
+In order to use any other part than SpectralAnalysis please contact with author of the projec (listed at the top of this file).
 
 [**Return**](#-quick-links)
 
